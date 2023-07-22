@@ -19,12 +19,12 @@ public class SubjectController {
     }
 
     @PostMapping("/create")
-    public Subject createStudent(@RequestBody Subject subject) {
+    public Subject createSubject(@RequestBody Subject subject) {
         return subjectService.addSubject(subject);
     }
 
     @DeleteMapping("/delete")
-    public boolean deleteStudent(@RequestBody Subject subject) {
+    public boolean deleteSubject(@RequestBody Subject subject) {
         return subjectService.delete(subject);
     }
 }
